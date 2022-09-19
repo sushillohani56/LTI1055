@@ -1,0 +1,43 @@
+<!--Check whether textbox is empty or not-->
+
+<html>
+<head>
+<title> Checking Textbox </title>
+<script>
+function check()
+{
+var a= document.abc.textbox.value; //storing the value in the textbox
+
+if (a.length ==0)
+{
+alert ("Textbox is empty");
+}
+
+else
+{
+alert ("Thank you!");
+}
+
+}
+
+</script>
+</head>
+
+<body>
+
+<form name="abc">
+<table width=400px border=1 align="center">
+<tr>
+<td align="center">
+<input type="text" name="textbox">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<input type="button" value="check" onclick="check();">
+</td>
+</tr>
+
+</body>
+</html>

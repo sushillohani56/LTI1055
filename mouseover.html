@@ -1,0 +1,38 @@
+<!-- changeing color of background by mouse over on HTML elements-->
+
+<html>
+<head>
+
+<script>
+
+function myfunc(bg)
+{
+document.body.style.background=bg;
+}
+
+</script>
+
+</head>
+<body>
+
+<table width="300" height="100">
+
+<tr>
+
+<td onmouseover="myfunc('red')" onmouseout="myfunc('yellow')" bgcolor="red">
+
+</td>
+
+<td onmouseover="myfunc('green')" onmouseout="myfunc('transparent')" bgcolor="green">
+
+</td>
+
+<td onmouseover="myfunc('blue')" onmouseout="myfunc('aqua')" bgcolor="blue">
+
+</td>
+
+</tr>
+</table>
+</body>
+
+</html>

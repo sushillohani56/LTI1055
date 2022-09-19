@@ -1,0 +1,48 @@
+<!--Linear Search-->
+
+<html>
+<head>
+<title>
+Linear search
+</title>
+
+<script>
+ function find()
+ {
+ var n= prompt("Enter the Size of array");
+ var ob= new Array(n);
+ 
+ //array traversal-input from user
+ 
+ for(i=0; i<n; i++)
+ {
+ ob[i]= prompt("Enter value at location " + i + " of the array");
+ }
+ 
+ var num= prompt("Enter value to find");
+
+//loop for searching
+
+for(j=0; j<n; j++)
+{
+if (ob[j]==num)
+{
+alert("value " + ob[j] +"found at " + j + "location");
+}
+
+if(j==n)
+{
+alert("value not found");
+}
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<input type="Submit" value=" Click to check" onclick="find()">
+
+</body>
+</html>

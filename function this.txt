@@ -1,0 +1,35 @@
+function price(amount)
+{
+
+this.amount=amount;
+
+}
+
+function book(title, author)
+{
+
+this.title=title;
+this.author=author;
+this.price=price; //assign new function as a property to already created function
+
+
+}
+
+</script>
+</head>
+
+<body>
+
+<script>
+ 
+ var myBook= new book("web tech", "abc");
+ 
+ myBook.price(200);
+ 
+ document.write("Book title is :" + myBook.title + "<br>");
+ document.write("Book author is :" + myBook.author + "<br>");
+ document.write("Book price is :" + myBook.amount + "<br>");
+ 
+ </script>
+ </body>
+ </html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title> Eligible to vote or not </title>
+<script>
+function check()
+{
+var a= document.abc.textbox.value;
+
+if (a>=18)
+{
+alert ("Eligible to vote.");
+}
+
+else
+{
+alert ("Not eligible to vote.");
+}
+}
+
+</script>
+</head>
+
+<body bgcolor="pink"> <br><br><br><br>
+<h3><center>Enter Age :</center></h3>
+<form name="abc">
+<table width=500px border=3 align="center">
+<tr>
+<td align="center">
+<input type="text" name="textbox">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<input type="button" value="check" onclick="check();">
+</td>
+</tr>
+
+</body>
+</html>
